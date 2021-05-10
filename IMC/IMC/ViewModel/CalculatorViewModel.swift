@@ -5,12 +5,9 @@
 //  Created by Heitor Novais | Gerencianet on 10/05/21.
 //
 
-import UIKit
-
 final class CalculatorViewModel {
     var weight: Double?
     var height: Double?
-    var image: UIImage?
     
     func calculateIMC() -> Double? {
         guard let weight = weight else { return nil }

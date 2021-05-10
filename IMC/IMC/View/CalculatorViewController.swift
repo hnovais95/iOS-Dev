@@ -23,6 +23,7 @@ final class CalculatorViewController: UIViewController {
         super.viewDidLoad()
         weightTextField.addTarget(self, action: #selector(weightChanged), for: .editingChanged)
         heightTextField.addTarget(self, action: #selector(heightChanged), for: .editingChanged)
+        resultButton.addTarget(self, action: #selector(calculate), for: .touchUpInside)
     }
     
     @objc
@@ -37,11 +38,8 @@ final class CalculatorViewController: UIViewController {
         viewModel.height = formatter.toDouble(height)
     }
     
-    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        view.endEditing(true)
-    } 
-
-    @IBAction func calculate(_ sender: Any) {
+    @objc
+    func calculate(_ sender: Any) {
         if let imc = viewModel.calculateIMC() {
             showResult(imc)
         }
@@ -53,6 +51,10 @@ final class CalculatorViewController: UIViewController {
         resultTextField.text = "\(imc): \(rating.description)"
         resultImageView.image = UIImage(named: rating.imageName)
         resultView.isHidden = false
+        view.endEditing(true)
+    }    
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         view.endEditing(true)
     }
 }
