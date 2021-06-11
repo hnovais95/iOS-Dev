@@ -32,13 +32,31 @@ class RemoteAddAccountTests: XCTestCase {
         sut.add(addAccountModel: addAccountModel) { result in
             switch result {
             case .success:
-                XCTFail("Expected error receibe \(result) instead")
+                XCTFail("Expected error received \(result) instead")
             case .failure(let error):
                 XCTAssertEqual(error, .unexpected)
             }
             exp.fulfill()
         }
         httpClientSpy.completeWithError(.noConnectivity)
+        wait(for: [exp], timeout: 1)
+    }
+    
+    func test_add_should_complete_with_error_if_client_completes_with_data() {
+        let (sut, httpClientSpy) = makeSut()
+        let exp = expectation(description: "waiting")
+        let addAccountModel = makeAddAccountModel()
+        let expectedAccount = makeAccountModel()
+        sut.add(addAccountModel: addAccountModel) { result in
+            switch result {
+            case .success(let receivedAccount):
+                XCTAssertEqual(receivedAccount, expectedAccount)
+            case .failure:
+                XCTFail("Expected success received \(result) instead")
+            }
+            exp.fulfill()
+        }
+        httpClientSpy.completeWithData(expectedAccount.toData()!)
         wait(for: [exp], timeout: 1)
     }
 }
@@ -55,6 +73,10 @@ extension RemoteAddAccountTests {
         return AddAccountModel(name: "any_name", email: "any_email@domain.com", password: "any_password", passwordConfirmation: "any_password")
     }
     
+    func makeAccountModel() -> AccountModel {
+        return AccountModel(id: "any_id", name: "any_name", email: "any_email@domain.com", password: "any_password")
+    }
+    
     class HttpClientSpy: HttpPostClient {
         
         var urls = [URL]()
@@ -69,6 +91,10 @@ extension RemoteAddAccountTests {
         
         func completeWithError(_ error: HttpError) {
             completion?(.failure(error))
+        }
+        
+        func completeWithData(_ data: Data) {
+            completion?(.success(data))
         }
     }
 }
