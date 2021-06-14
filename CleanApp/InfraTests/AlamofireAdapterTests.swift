@@ -77,13 +77,12 @@ extension AlamofireAdapterTests {
     
     func testRequestFor(url: URL = makeUrl(), data: Data?, action: @escaping (URLRequest) -> Void) {
         let sut = makeSut()
-        sut.post(to: makeUrl(), with: data) { _ in }
         let exp = expectation(description: "waiting")
-        UrlProtocolStub.observeRequest { request in
-            action(request)
-            exp.fulfill()
-        }
+        sut.post(to: makeUrl(), with: data) { _ in exp.fulfill() }
+        var request: URLRequest?
+        UrlProtocolStub.observeRequest { request = $0 }
         wait(for: [exp], timeout: 1)
+        action(request!)
     }
 }
 
@@ -127,6 +126,8 @@ class UrlProtocolStub: URLProtocol {
         if let error = UrlProtocolStub.error {
             client?.urlProtocol(self, didFailWithError: error)
         }
+        
+        client?.urlProtocolDidFinishLoading(self)
     }
     
     open override func stopLoading() {}
