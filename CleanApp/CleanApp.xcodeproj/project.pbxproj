@@ -18,6 +18,7 @@
 		CADECAA4267799BC00E53178 /* Data.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAF761322673C325004A9B9E /* Data.framework */; };
 		CADECAA5267799BC00E53178 /* Data.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CAF761322673C325004A9B9E /* Data.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		CADECAAB26779B6D00E53178 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = CADECAAA26779B6D00E53178 /* Alamofire */; };
+		CADECAB02677BE6400E53178 /* Data+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CADECAAF2677BE6400E53178 /* Data+Extensions.swift */; };
 		CAF7613B2673C326004A9B9E /* Data.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAF761322673C325004A9B9E /* Data.framework */; };
 		CAF761402673C326004A9B9E /* RemoteAddAccountTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAF7613F2673C326004A9B9E /* RemoteAddAccountTests.swift */; };
 		CAF7614A2673C450004A9B9E /* Domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAF7612526739EA7004A9B9E /* Domain.framework */; };
@@ -98,6 +99,7 @@
 		CADECA8E2677976500E53178 /* InfraTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InfraTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CADECA932677976500E53178 /* AlamofireAdapterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamofireAdapterTests.swift; sourceTree = "<group>"; };
 		CADECA952677976500E53178 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CADECAAF2677BE6400E53178 /* Data+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data+Extensions.swift"; sourceTree = "<group>"; };
 		CAF7612526739EA7004A9B9E /* Domain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Domain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CAF7612826739EA7004A9B9E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CAF761322673C325004A9B9E /* Data.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Data.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -190,6 +192,7 @@
 			children = (
 				CADECA932677976500E53178 /* AlamofireAdapterTests.swift */,
 				CADECA952677976500E53178 /* Info.plist */,
+				CADECAAF2677BE6400E53178 /* Data+Extensions.swift */,
 			);
 			path = InfraTests;
 			sourceTree = "<group>";
@@ -545,6 +548,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CADECAA32677997A00E53178 /* TestFactories.swift in Sources */,
+				CADECAB02677BE6400E53178 /* Data+Extensions.swift in Sources */,
 				CADECAA22677997300E53178 /* XCTestCase+Extensions.swift in Sources */,
 				CADECA942677976500E53178 /* AlamofireAdapterTests.swift in Sources */,
 			);

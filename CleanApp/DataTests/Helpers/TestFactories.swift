@@ -7,6 +7,10 @@
 
 import Foundation
 
+func makeValidData() -> Data {
+    return Data("{\"name\":\"Heitor\"}".utf8)
+}
+
 func makeInvalidData() -> Data {
     return Data("invalid_data".utf8)
 }
