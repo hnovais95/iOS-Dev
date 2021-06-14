@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CADECA7926778B8400E53178 /* XCTestCase+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CADECA7826778B8400E53178 /* XCTestCase+Extensions.swift */; };
+		CADECA7B26778C3000E53178 /* TestFactories.swift in Sources */ = {isa = PBXBuildFile; fileRef = CADECA7A26778C3000E53178 /* TestFactories.swift */; };
+		CADECA7E26778C7000E53178 /* HttpClientSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = CADECA7D26778C7000E53178 /* HttpClientSpy.swift */; };
+		CADECA8026778CD500E53178 /* AccountModelFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = CADECA7F26778CD500E53178 /* AccountModelFactory.swift */; };
 		CAF7613B2673C326004A9B9E /* Data.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAF761322673C325004A9B9E /* Data.framework */; };
 		CAF761402673C326004A9B9E /* RemoteAddAccountTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAF7613F2673C326004A9B9E /* RemoteAddAccountTests.swift */; };
 		CAF7614A2673C450004A9B9E /* Domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAF7612526739EA7004A9B9E /* Domain.framework */; };
@@ -53,6 +57,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		CADECA7826778B8400E53178 /* XCTestCase+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCTestCase+Extensions.swift"; sourceTree = "<group>"; };
+		CADECA7A26778C3000E53178 /* TestFactories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestFactories.swift; sourceTree = "<group>"; };
+		CADECA7D26778C7000E53178 /* HttpClientSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpClientSpy.swift; sourceTree = "<group>"; };
+		CADECA7F26778CD500E53178 /* AccountModelFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountModelFactory.swift; sourceTree = "<group>"; };
 		CAF7612526739EA7004A9B9E /* Domain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Domain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CAF7612826739EA7004A9B9E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CAF761322673C325004A9B9E /* Data.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Data.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -97,6 +105,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CADECA7726778B4900E53178 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				CADECA7826778B8400E53178 /* XCTestCase+Extensions.swift */,
+				CADECA7A26778C3000E53178 /* TestFactories.swift */,
+				CADECA7F26778CD500E53178 /* AccountModelFactory.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		CADECA7C26778C5E00E53178 /* Http */ = {
+			isa = PBXGroup;
+			children = (
+				CADECA7D26778C7000E53178 /* HttpClientSpy.swift */,
+			);
+			path = Http;
+			sourceTree = "<group>";
+		};
 		CAF7610B26739DF8004A9B9E = {
 			isa = PBXGroup;
 			children = (
@@ -143,7 +169,9 @@
 		CAF7613E2673C326004A9B9E /* DataTests */ = {
 			isa = PBXGroup;
 			children = (
+				CADECA7726778B4900E53178 /* Helpers */,
 				CAF761522673C6B1004A9B9E /* UseCases */,
+				CADECA7C26778C5E00E53178 /* Http */,
 				CAF761412673C326004A9B9E /* Info.plist */,
 			);
 			path = DataTests;
@@ -383,6 +411,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CADECA7B26778C3000E53178 /* TestFactories.swift in Sources */,
+				CADECA7E26778C7000E53178 /* HttpClientSpy.swift in Sources */,
+				CADECA7926778B8400E53178 /* XCTestCase+Extensions.swift in Sources */,
+				CADECA8026778CD500E53178 /* AccountModelFactory.swift in Sources */,
 				CAF761402673C326004A9B9E /* RemoteAddAccountTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
