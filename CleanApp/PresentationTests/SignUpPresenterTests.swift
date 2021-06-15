@@ -44,8 +44,7 @@ struct SignUpViewModel {
 class SignUpPresenterTests: XCTestCase {
 
     func test_signUp_should_show_error_message_if_not_privaded() {
-        let alertViewSpy = AlertViewSpy()
-        let sut = SignUpPresenter(alertView: alertViewSpy)
+        let (sut, alertViewSpy) = makeSut()
         let signUpViewModel = makeInvalidViewModel()
         sut.signUp(viewModel: signUpViewModel)
         XCTAssertEqual(alertViewSpy.viewModel, AlertViewModel(title: "Falha na validação", message: "O campo Nome é obrigatório."))
@@ -53,6 +52,12 @@ class SignUpPresenterTests: XCTestCase {
 }
 
 extension SignUpPresenterTests {
+    
+    func makeSut() -> (SignUpPresenter, AlertViewSpy) {
+        let alertViewSpy = AlertViewSpy()
+        let sut = SignUpPresenter(alertView: alertViewSpy)
+        return (sut, alertViewSpy)
+    }
     
     func makeValidViewModel() -> SignUpViewModel {
         return SignUpViewModel(name: "Gorbadock Oldbuck", email: "any_email@domain.com" , password: "secret", passwordConfirmation: "secret")
