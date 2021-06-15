@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		CA937E2A2678E105007EDF64 /* AlamofireAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA937E292678E105007EDF64 /* AlamofireAdapter.swift */; };
+		CA937E2F2678E264007EDF64 /* UrlProtocolStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA937E2E2678E264007EDF64 /* UrlProtocolStub.swift */; };
 		CADECA7926778B8400E53178 /* XCTestCase+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CADECA7826778B8400E53178 /* XCTestCase+Extensions.swift */; };
 		CADECA7B26778C3000E53178 /* TestFactories.swift in Sources */ = {isa = PBXBuildFile; fileRef = CADECA7A26778C3000E53178 /* TestFactories.swift */; };
 		CADECA7E26778C7000E53178 /* HttpClientSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = CADECA7D26778C7000E53178 /* HttpClientSpy.swift */; };
@@ -91,6 +92,7 @@
 
 /* Begin PBXFileReference section */
 		CA937E292678E105007EDF64 /* AlamofireAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamofireAdapter.swift; sourceTree = "<group>"; };
+		CA937E2E2678E264007EDF64 /* UrlProtocolStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UrlProtocolStub.swift; sourceTree = "<group>"; };
 		CADECA7826778B8400E53178 /* XCTestCase+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCTestCase+Extensions.swift"; sourceTree = "<group>"; };
 		CADECA7A26778C3000E53178 /* TestFactories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestFactories.swift; sourceTree = "<group>"; };
 		CADECA7D26778C7000E53178 /* HttpClientSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpClientSpy.swift; sourceTree = "<group>"; };
@@ -169,6 +171,15 @@
 			path = Http;
 			sourceTree = "<group>";
 		};
+		CA937E2D2678E24E007EDF64 /* Http */ = {
+			isa = PBXGroup;
+			children = (
+				CADECA932677976500E53178 /* AlamofireAdapterTests.swift */,
+				CA937E2E2678E264007EDF64 /* UrlProtocolStub.swift */,
+			);
+			path = Http;
+			sourceTree = "<group>";
+		};
 		CADECA7726778B4900E53178 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
@@ -199,7 +210,7 @@
 		CADECA922677976500E53178 /* InfraTests */ = {
 			isa = PBXGroup;
 			children = (
-				CADECA932677976500E53178 /* AlamofireAdapterTests.swift */,
+				CA937E2D2678E24E007EDF64 /* Http */,
 				CADECA952677976500E53178 /* Info.plist */,
 			);
 			path = InfraTests;
@@ -560,6 +571,7 @@
 				CADECAA32677997A00E53178 /* TestFactories.swift in Sources */,
 				CADECAA22677997300E53178 /* XCTestCase+Extensions.swift in Sources */,
 				CADECA942677976500E53178 /* AlamofireAdapterTests.swift in Sources */,
+				CA937E2F2678E264007EDF64 /* UrlProtocolStub.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
