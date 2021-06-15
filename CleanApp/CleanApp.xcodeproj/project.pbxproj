@@ -19,6 +19,7 @@
 		CA937E5F26792C9F007EDF64 /* Domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAF7612526739EA7004A9B9E /* Domain.framework */; };
 		CA937E6126792D42007EDF64 /* AlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA937E6026792D42007EDF64 /* AlertView.swift */; };
 		CA937E6726792FED007EDF64 /* AlertViewSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA937E6626792FED007EDF64 /* AlertViewSpy.swift */; };
+		CA937E6A267933E1007EDF64 /* EmailValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA937E69267933E1007EDF64 /* EmailValidator.swift */; };
 		CADECA7926778B8400E53178 /* XCTestCase+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CADECA7826778B8400E53178 /* XCTestCase+Extensions.swift */; };
 		CADECA7B26778C3000E53178 /* TestFactories.swift in Sources */ = {isa = PBXBuildFile; fileRef = CADECA7A26778C3000E53178 /* TestFactories.swift */; };
 		CADECA7E26778C7000E53178 /* HttpClientSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = CADECA7D26778C7000E53178 /* HttpClientSpy.swift */; };
@@ -128,6 +129,7 @@
 		CA937E5D26792C91007EDF64 /* SignUpPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpPresenter.swift; sourceTree = "<group>"; };
 		CA937E6026792D42007EDF64 /* AlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertView.swift; sourceTree = "<group>"; };
 		CA937E6626792FED007EDF64 /* AlertViewSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertViewSpy.swift; sourceTree = "<group>"; };
+		CA937E69267933E1007EDF64 /* EmailValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailValidator.swift; sourceTree = "<group>"; };
 		CADECA7826778B8400E53178 /* XCTestCase+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCTestCase+Extensions.swift"; sourceTree = "<group>"; };
 		CADECA7A26778C3000E53178 /* TestFactories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestFactories.swift; sourceTree = "<group>"; };
 		CADECA7D26778C7000E53178 /* HttpClientSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpClientSpy.swift; sourceTree = "<group>"; };
@@ -253,6 +255,7 @@
 		CA937E472678F537007EDF64 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				CA937E68267933BE007EDF64 /* Validators */,
 				CA937E6326792D4E007EDF64 /* Presenters */,
 				CA937E6226792D45007EDF64 /* Views */,
 				CA937E492678F537007EDF64 /* Info.plist */,
@@ -300,6 +303,14 @@
 				CA937E6626792FED007EDF64 /* AlertViewSpy.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		CA937E68267933BE007EDF64 /* Validators */ = {
+			isa = PBXGroup;
+			children = (
+				CA937E69267933E1007EDF64 /* EmailValidator.swift */,
+			);
+			path = Validators;
 			sourceTree = "<group>";
 		};
 		CADECA7726778B4900E53178 /* Helpers */ = {
@@ -793,6 +804,7 @@
 			files = (
 				CA937E5E26792C91007EDF64 /* SignUpPresenter.swift in Sources */,
 				CA937E6126792D42007EDF64 /* AlertView.swift in Sources */,
+				CA937E6A267933E1007EDF64 /* EmailValidator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
