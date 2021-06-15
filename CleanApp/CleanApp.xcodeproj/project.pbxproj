@@ -18,6 +18,7 @@
 		CA937E5E26792C91007EDF64 /* SignUpPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA937E5D26792C91007EDF64 /* SignUpPresenter.swift */; };
 		CA937E5F26792C9F007EDF64 /* Domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAF7612526739EA7004A9B9E /* Domain.framework */; };
 		CA937E6126792D42007EDF64 /* AlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA937E6026792D42007EDF64 /* AlertView.swift */; };
+		CA937E6726792FED007EDF64 /* AlertViewSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA937E6626792FED007EDF64 /* AlertViewSpy.swift */; };
 		CADECA7926778B8400E53178 /* XCTestCase+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CADECA7826778B8400E53178 /* XCTestCase+Extensions.swift */; };
 		CADECA7B26778C3000E53178 /* TestFactories.swift in Sources */ = {isa = PBXBuildFile; fileRef = CADECA7A26778C3000E53178 /* TestFactories.swift */; };
 		CADECA7E26778C7000E53178 /* HttpClientSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = CADECA7D26778C7000E53178 /* HttpClientSpy.swift */; };
@@ -126,6 +127,7 @@
 		CA937E552678F538007EDF64 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CA937E5D26792C91007EDF64 /* SignUpPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpPresenter.swift; sourceTree = "<group>"; };
 		CA937E6026792D42007EDF64 /* AlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertView.swift; sourceTree = "<group>"; };
+		CA937E6626792FED007EDF64 /* AlertViewSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertViewSpy.swift; sourceTree = "<group>"; };
 		CADECA7826778B8400E53178 /* XCTestCase+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCTestCase+Extensions.swift"; sourceTree = "<group>"; };
 		CADECA7A26778C3000E53178 /* TestFactories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestFactories.swift; sourceTree = "<group>"; };
 		CADECA7D26778C7000E53178 /* HttpClientSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpClientSpy.swift; sourceTree = "<group>"; };
@@ -262,6 +264,7 @@
 			isa = PBXGroup;
 			children = (
 				CA937E6426792EE8007EDF64 /* Presenters */,
+				CA937E6526792FCE007EDF64 /* Views */,
 				CA937E552678F538007EDF64 /* Info.plist */,
 			);
 			path = PresentationTests;
@@ -289,6 +292,14 @@
 				CA937E532678F538007EDF64 /* SignUpPresenterTests.swift */,
 			);
 			path = Presenters;
+			sourceTree = "<group>";
+		};
+		CA937E6526792FCE007EDF64 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CA937E6626792FED007EDF64 /* AlertViewSpy.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		CADECA7726778B4900E53178 /* Helpers */ = {
@@ -789,6 +800,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA937E6726792FED007EDF64 /* AlertViewSpy.swift in Sources */,
 				CA937E542678F538007EDF64 /* SignUpPresenterTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

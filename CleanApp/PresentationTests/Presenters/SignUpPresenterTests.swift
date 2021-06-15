@@ -31,11 +31,18 @@ class SignUpPresenterTests: XCTestCase {
         XCTAssertEqual(alertViewSpy.viewModel, AlertViewModel(title: "Falha na validação", message: "O campo Senha é obrigatório."))
     }
     
-    func test_signUp_should_show_error_message_if_passwordConfirmation_not_privaded() {
+    func test_signUp_should_show_error_message_if_password_confirmation_not_privaded() {
         let (sut, alertViewSpy) = makeSut()
         let signUpViewModel = makeViewModelWithoutPasswordConfirmation()
         sut.signUp(viewModel: signUpViewModel)
         XCTAssertEqual(alertViewSpy.viewModel, AlertViewModel(title: "Falha na validação", message: "O campo Confirmar Senha é obrigatório."))
+    }
+    
+    func test_signUp_should_show_error_message_if_password_confirmation_not_match() {
+        let (sut, alertViewSpy) = makeSut()
+        let signUpViewModel = makeViewModelWithPasswordConfirmationNotMatch()
+        sut.signUp(viewModel: signUpViewModel)
+        XCTAssertEqual(alertViewSpy.viewModel, AlertViewModel(title: "Falha na validação", message: "Falha ao confirmar senha."))
     }
 }
 
@@ -45,6 +52,10 @@ extension SignUpPresenterTests {
         let alertViewSpy = AlertViewSpy()
         let sut = SignUpPresenter(alertView: alertViewSpy)
         return (sut, alertViewSpy)
+    }
+    
+    func makeValidViewModel() -> SignUpViewModel {
+        return SignUpViewModel(name: "any_name", email: "any_email@domain.com", password: "secret", passwordConfirmation: "secret")
     }
     
     func makeViewModelWithoutName() -> SignUpViewModel {
@@ -63,12 +74,7 @@ extension SignUpPresenterTests {
         return SignUpViewModel(name: "Gorbadock Oldbuck", email: "any_email@domain.com", password: "secret")
     }
     
-    class AlertViewSpy: AlertView {
-        
-        var viewModel: AlertViewModel?
-        
-        func showMessage(viewModel: AlertViewModel) {
-            self.viewModel = viewModel
-        }
+    func makeViewModelWithPasswordConfirmationNotMatch() -> SignUpViewModel {
+        return SignUpViewModel(name: "any_name", email: "any_email@domain.com", password: "secret", passwordConfirmation: "wrong_password")
     }
 }
