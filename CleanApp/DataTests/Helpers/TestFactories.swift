@@ -15,6 +15,10 @@ func makeInvalidData() -> Data {
     return Data("invalid_data".utf8)
 }
 
+func makeEmptyData() -> Data {
+    return Data("".utf8)
+}
+
 func makeUrl() -> URL {
     return URL(string: "http://any-url.com")!
 }
