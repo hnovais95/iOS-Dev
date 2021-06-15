@@ -6,52 +6,7 @@
 //
 
 import XCTest
-
-class SignUpPresenter {
-    
-    private let alertView: AlertView
-    
-    init(alertView: AlertView) {
-        self.alertView = alertView
-    }
-    
-    func signUp(viewModel: SignUpViewModel) {
-        if (viewModel.name == nil) || viewModel.name!.isEmpty {
-            alertView.showMessage(viewModel: AlertViewModel(title: "Falha na validação", message: "O campo Nome é obrigatório."))
-        }
-        
-        if (viewModel.email == nil) || viewModel.email!.isEmpty {
-            alertView.showMessage(viewModel: AlertViewModel(title: "Falha na validação", message: "O campo Email é obrigatório."))
-        }
-        
-        if (viewModel.password == nil) || viewModel.password!.isEmpty {
-            alertView.showMessage(viewModel: AlertViewModel(title: "Falha na validação", message: "O campo Password é obrigatório."))
-        }
-        
-        if (viewModel.passwordConfirmation == nil) || viewModel.passwordConfirmation!.isEmpty {
-            alertView.showMessage(viewModel: AlertViewModel(title: "Falha na validação", message: "O campo Passoword Confirmation é obrigatório."))
-        }
-    }
-}
-
-protocol AlertView {
-    
-    func showMessage(viewModel: AlertViewModel)
-}
-
-struct AlertViewModel: Equatable {
-    
-    var title: String
-    var message: String
-}
-
-struct SignUpViewModel {
-    
-    var name: String?
-    var email: String?
-    var password: String?
-    var passwordConfirmation: String?
-}
+import Presentation
 
 class SignUpPresenterTests: XCTestCase {
 
@@ -73,14 +28,14 @@ class SignUpPresenterTests: XCTestCase {
         let (sut, alertViewSpy) = makeSut()
         let signUpViewModel = makeViewModelWithoutPassword()
         sut.signUp(viewModel: signUpViewModel)
-        XCTAssertEqual(alertViewSpy.viewModel, AlertViewModel(title: "Falha na validação", message: "O campo Password é obrigatório."))
+        XCTAssertEqual(alertViewSpy.viewModel, AlertViewModel(title: "Falha na validação", message: "O campo Senha é obrigatório."))
     }
     
     func test_signUp_should_show_error_message_if_passwordConfirmation_not_privaded() {
         let (sut, alertViewSpy) = makeSut()
         let signUpViewModel = makeViewModelWithoutPasswordConfirmation()
         sut.signUp(viewModel: signUpViewModel)
-        XCTAssertEqual(alertViewSpy.viewModel, AlertViewModel(title: "Falha na validação", message: "O campo Passoword Confirmation é obrigatório."))
+        XCTAssertEqual(alertViewSpy.viewModel, AlertViewModel(title: "Falha na validação", message: "O campo Confirmar Senha é obrigatório."))
     }
 }
 

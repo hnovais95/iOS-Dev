@@ -15,6 +15,9 @@
 		CA937E402678E64A007EDF64 /* Infra.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CADECA862677976500E53178 /* Infra.framework */; };
 		CA937E4F2678F538007EDF64 /* Presentation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA937E462678F537007EDF64 /* Presentation.framework */; };
 		CA937E542678F538007EDF64 /* SignUpPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA937E532678F538007EDF64 /* SignUpPresenterTests.swift */; };
+		CA937E5E26792C91007EDF64 /* SignUpPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA937E5D26792C91007EDF64 /* SignUpPresenter.swift */; };
+		CA937E5F26792C9F007EDF64 /* Domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAF7612526739EA7004A9B9E /* Domain.framework */; };
+		CA937E6126792D42007EDF64 /* AlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA937E6026792D42007EDF64 /* AlertView.swift */; };
 		CADECA7926778B8400E53178 /* XCTestCase+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CADECA7826778B8400E53178 /* XCTestCase+Extensions.swift */; };
 		CADECA7B26778C3000E53178 /* TestFactories.swift in Sources */ = {isa = PBXBuildFile; fileRef = CADECA7A26778C3000E53178 /* TestFactories.swift */; };
 		CADECA7E26778C7000E53178 /* HttpClientSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = CADECA7D26778C7000E53178 /* HttpClientSpy.swift */; };
@@ -121,6 +124,8 @@
 		CA937E4E2678F538007EDF64 /* PresentationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PresentationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA937E532678F538007EDF64 /* SignUpPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpPresenterTests.swift; sourceTree = "<group>"; };
 		CA937E552678F538007EDF64 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CA937E5D26792C91007EDF64 /* SignUpPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpPresenter.swift; sourceTree = "<group>"; };
+		CA937E6026792D42007EDF64 /* AlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertView.swift; sourceTree = "<group>"; };
 		CADECA7826778B8400E53178 /* XCTestCase+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCTestCase+Extensions.swift"; sourceTree = "<group>"; };
 		CADECA7A26778C3000E53178 /* TestFactories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestFactories.swift; sourceTree = "<group>"; };
 		CADECA7D26778C7000E53178 /* HttpClientSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpClientSpy.swift; sourceTree = "<group>"; };
@@ -162,6 +167,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA937E5F26792C9F007EDF64 /* Domain.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -245,6 +251,8 @@
 		CA937E472678F537007EDF64 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				CA937E6326792D4E007EDF64 /* Presenters */,
+				CA937E6226792D45007EDF64 /* Views */,
 				CA937E492678F537007EDF64 /* Info.plist */,
 			);
 			path = Presentation;
@@ -253,10 +261,34 @@
 		CA937E522678F538007EDF64 /* PresentationTests */ = {
 			isa = PBXGroup;
 			children = (
-				CA937E532678F538007EDF64 /* SignUpPresenterTests.swift */,
+				CA937E6426792EE8007EDF64 /* Presenters */,
 				CA937E552678F538007EDF64 /* Info.plist */,
 			);
 			path = PresentationTests;
+			sourceTree = "<group>";
+		};
+		CA937E6226792D45007EDF64 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CA937E6026792D42007EDF64 /* AlertView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		CA937E6326792D4E007EDF64 /* Presenters */ = {
+			isa = PBXGroup;
+			children = (
+				CA937E5D26792C91007EDF64 /* SignUpPresenter.swift */,
+			);
+			path = Presenters;
+			sourceTree = "<group>";
+		};
+		CA937E6426792EE8007EDF64 /* Presenters */ = {
+			isa = PBXGroup;
+			children = (
+				CA937E532678F538007EDF64 /* SignUpPresenterTests.swift */,
+			);
+			path = Presenters;
 			sourceTree = "<group>";
 		};
 		CADECA7726778B4900E53178 /* Helpers */ = {
@@ -623,6 +655,7 @@
 					};
 					CA937E452678F537007EDF64 = {
 						CreatedOnToolsVersion = 12.5;
+						LastSwiftMigration = 1250;
 					};
 					CA937E4D2678F538007EDF64 = {
 						CreatedOnToolsVersion = 12.5;
@@ -747,6 +780,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA937E5E26792C91007EDF64 /* SignUpPresenter.swift in Sources */,
+				CA937E6126792D42007EDF64 /* AlertView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -890,6 +925,7 @@
 		CA937E582678F538007EDF64 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
@@ -909,6 +945,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -916,6 +953,7 @@
 		CA937E592678F538007EDF64 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
@@ -942,6 +980,7 @@
 		CA937E5B2678F538007EDF64 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = ZF258QDQ5C;
@@ -962,6 +1001,7 @@
 		CA937E5C2678F538007EDF64 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = ZF258QDQ5C;
