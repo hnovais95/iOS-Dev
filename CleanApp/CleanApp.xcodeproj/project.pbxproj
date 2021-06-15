@@ -13,6 +13,8 @@
 		CA937E392678E62C007EDF64 /* Data.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAF761322673C325004A9B9E /* Data.framework */; };
 		CA937E3F2678E649007EDF64 /* Domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAF7612526739EA7004A9B9E /* Domain.framework */; };
 		CA937E402678E64A007EDF64 /* Infra.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CADECA862677976500E53178 /* Infra.framework */; };
+		CA937E4F2678F538007EDF64 /* Presentation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA937E462678F537007EDF64 /* Presentation.framework */; };
+		CA937E542678F538007EDF64 /* SignUpPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA937E532678F538007EDF64 /* SignUpPresenterTests.swift */; };
 		CADECA7926778B8400E53178 /* XCTestCase+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CADECA7826778B8400E53178 /* XCTestCase+Extensions.swift */; };
 		CADECA7B26778C3000E53178 /* TestFactories.swift in Sources */ = {isa = PBXBuildFile; fileRef = CADECA7A26778C3000E53178 /* TestFactories.swift */; };
 		CADECA7E26778C7000E53178 /* HttpClientSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = CADECA7D26778C7000E53178 /* HttpClientSpy.swift */; };
@@ -45,6 +47,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = CAF761312673C325004A9B9E;
 			remoteInfo = Data;
+		};
+		CA937E502678F538007EDF64 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CAF7610C26739DF8004A9B9E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CA937E452678F537007EDF64;
+			remoteInfo = Presentation;
 		};
 		CADECA902677976500E53178 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -107,6 +116,11 @@
 		CA937E342678E62C007EDF64 /* UseCasesIntegrationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UseCasesIntegrationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA937E362678E62C007EDF64 /* UseCasesIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UseCasesIntegrationTests.swift; sourceTree = "<group>"; };
 		CA937E382678E62C007EDF64 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CA937E462678F537007EDF64 /* Presentation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Presentation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA937E492678F537007EDF64 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CA937E4E2678F538007EDF64 /* PresentationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PresentationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA937E532678F538007EDF64 /* SignUpPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpPresenterTests.swift; sourceTree = "<group>"; };
+		CA937E552678F538007EDF64 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CADECA7826778B8400E53178 /* XCTestCase+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCTestCase+Extensions.swift"; sourceTree = "<group>"; };
 		CADECA7A26778C3000E53178 /* TestFactories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestFactories.swift; sourceTree = "<group>"; };
 		CADECA7D26778C7000E53178 /* HttpClientSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpClientSpy.swift; sourceTree = "<group>"; };
@@ -141,6 +155,21 @@
 				CA937E3F2678E649007EDF64 /* Domain.framework in Frameworks */,
 				CA937E402678E64A007EDF64 /* Infra.framework in Frameworks */,
 				CA937E392678E62C007EDF64 /* Data.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA937E432678F537007EDF64 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA937E4B2678F538007EDF64 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA937E4F2678F538007EDF64 /* Presentation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -213,6 +242,23 @@
 			path = UseCasesIntegrationTests;
 			sourceTree = "<group>";
 		};
+		CA937E472678F537007EDF64 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				CA937E492678F537007EDF64 /* Info.plist */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		CA937E522678F538007EDF64 /* PresentationTests */ = {
+			isa = PBXGroup;
+			children = (
+				CA937E532678F538007EDF64 /* SignUpPresenterTests.swift */,
+				CA937E552678F538007EDF64 /* Info.plist */,
+			);
+			path = PresentationTests;
+			sourceTree = "<group>";
+		};
 		CADECA7726778B4900E53178 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
@@ -258,6 +304,8 @@
 				CADECA872677976500E53178 /* Infra */,
 				CADECA922677976500E53178 /* InfraTests */,
 				CA937E352678E62C007EDF64 /* UseCasesIntegrationTests */,
+				CA937E472678F537007EDF64 /* Presentation */,
+				CA937E522678F538007EDF64 /* PresentationTests */,
 				CAF7611626739DF8004A9B9E /* Products */,
 				CAF761492673C450004A9B9E /* Frameworks */,
 			);
@@ -272,6 +320,8 @@
 				CADECA862677976500E53178 /* Infra.framework */,
 				CADECA8E2677976500E53178 /* InfraTests.xctest */,
 				CA937E342678E62C007EDF64 /* UseCasesIntegrationTests.xctest */,
+				CA937E462678F537007EDF64 /* Presentation.framework */,
+				CA937E4E2678F538007EDF64 /* PresentationTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -377,6 +427,13 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		CA937E412678F537007EDF64 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CADECA812677976500E53178 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -417,6 +474,42 @@
 			name = UseCasesIntegrationTests;
 			productName = UseCasesIntegrationTests;
 			productReference = CA937E342678E62C007EDF64 /* UseCasesIntegrationTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CA937E452678F537007EDF64 /* Presentation */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CA937E572678F538007EDF64 /* Build configuration list for PBXNativeTarget "Presentation" */;
+			buildPhases = (
+				CA937E412678F537007EDF64 /* Headers */,
+				CA937E422678F537007EDF64 /* Sources */,
+				CA937E432678F537007EDF64 /* Frameworks */,
+				CA937E442678F537007EDF64 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Presentation;
+			productName = Presentation;
+			productReference = CA937E462678F537007EDF64 /* Presentation.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		CA937E4D2678F538007EDF64 /* PresentationTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CA937E5A2678F538007EDF64 /* Build configuration list for PBXNativeTarget "PresentationTests" */;
+			buildPhases = (
+				CA937E4A2678F538007EDF64 /* Sources */,
+				CA937E4B2678F538007EDF64 /* Frameworks */,
+				CA937E4C2678F538007EDF64 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CA937E512678F538007EDF64 /* PBXTargetDependency */,
+			);
+			name = PresentationTests;
+			productName = PresentationTests;
+			productReference = CA937E4E2678F538007EDF64 /* PresentationTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		CADECA852677976500E53178 /* Infra */ = {
@@ -528,6 +621,12 @@
 					CA937E332678E62C007EDF64 = {
 						CreatedOnToolsVersion = 12.5;
 					};
+					CA937E452678F537007EDF64 = {
+						CreatedOnToolsVersion = 12.5;
+					};
+					CA937E4D2678F538007EDF64 = {
+						CreatedOnToolsVersion = 12.5;
+					};
 					CADECA852677976500E53178 = {
 						CreatedOnToolsVersion = 12.5;
 						LastSwiftMigration = 1250;
@@ -570,12 +669,28 @@
 				CADECA852677976500E53178 /* Infra */,
 				CADECA8D2677976500E53178 /* InfraTests */,
 				CA937E332678E62C007EDF64 /* UseCasesIntegrationTests */,
+				CA937E452678F537007EDF64 /* Presentation */,
+				CA937E4D2678F538007EDF64 /* PresentationTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		CA937E322678E62C007EDF64 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA937E442678F537007EDF64 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA937E4C2678F538007EDF64 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -625,6 +740,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				CA937E372678E62C007EDF64 /* UseCasesIntegrationTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA937E422678F537007EDF64 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA937E4A2678F538007EDF64 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA937E542678F538007EDF64 /* SignUpPresenterTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -689,6 +819,11 @@
 			target = CAF761312673C325004A9B9E /* Data */;
 			targetProxy = CA937E3A2678E62C007EDF64 /* PBXContainerItemProxy */;
 		};
+		CA937E512678F538007EDF64 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CA937E452678F537007EDF64 /* Presentation */;
+			targetProxy = CA937E502678F538007EDF64 /* PBXContainerItemProxy */;
+		};
 		CADECA912677976500E53178 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = CADECA852677976500E53178 /* Infra */;
@@ -746,6 +881,98 @@
 				);
 				MACOSX_DEPLOYMENT_TARGET = 11.3;
 				PRODUCT_BUNDLE_IDENTIFIER = "Heitor-Novais.UseCasesIntegrationTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		CA937E582678F538007EDF64 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = ZF258QDQ5C;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Presentation/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.3;
+				PRODUCT_BUNDLE_IDENTIFIER = "Heitor-Novais.Presentation";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		CA937E592678F538007EDF64 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = ZF258QDQ5C;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Presentation/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.3;
+				PRODUCT_BUNDLE_IDENTIFIER = "Heitor-Novais.Presentation";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		CA937E5B2678F538007EDF64 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = ZF258QDQ5C;
+				INFOPLIST_FILE = PresentationTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.3;
+				PRODUCT_BUNDLE_IDENTIFIER = "Heitor-Novais.PresentationTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		CA937E5C2678F538007EDF64 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = ZF258QDQ5C;
+				INFOPLIST_FILE = PresentationTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.3;
+				PRODUCT_BUNDLE_IDENTIFIER = "Heitor-Novais.PresentationTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 				SWIFT_VERSION = 5.0;
@@ -1131,6 +1358,24 @@
 			buildConfigurations = (
 				CA937E3D2678E62C007EDF64 /* Debug */,
 				CA937E3E2678E62C007EDF64 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CA937E572678F538007EDF64 /* Build configuration list for PBXNativeTarget "Presentation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CA937E582678F538007EDF64 /* Debug */,
+				CA937E592678F538007EDF64 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CA937E5A2678F538007EDF64 /* Build configuration list for PBXNativeTarget "PresentationTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CA937E5B2678F538007EDF64 /* Debug */,
+				CA937E5C2678F538007EDF64 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

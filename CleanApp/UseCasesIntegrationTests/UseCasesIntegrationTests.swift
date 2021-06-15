@@ -12,7 +12,7 @@ import Domain
 
 class UseCasesIntegrationTests: XCTestCase {
 
-    func test_add_acount() {
+    func test_add_account() {
         let alamofireAdapter = AlamofireAdapter()
         let url = URL(string: "https://clean-node-api.herokuapp.com/api/signup")!
         let sut = RemoteAddAccount(url: url, httpClient: alamofireAdapter)
@@ -29,6 +29,6 @@ class UseCasesIntegrationTests: XCTestCase {
             }
             exp.fulfill()
         }
-        wait(for: [exp], timeout: 5)
+        wait(for: [exp], timeout: 10)
     }
 }
