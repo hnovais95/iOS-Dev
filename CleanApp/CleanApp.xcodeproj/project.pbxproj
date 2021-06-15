@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		CA937E2A2678E105007EDF64 /* AlamofireAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA937E292678E105007EDF64 /* AlamofireAdapter.swift */; };
 		CA937E2F2678E264007EDF64 /* UrlProtocolStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA937E2E2678E264007EDF64 /* UrlProtocolStub.swift */; };
+		CA937E372678E62C007EDF64 /* UseCasesIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA937E362678E62C007EDF64 /* UseCasesIntegrationTests.swift */; };
+		CA937E392678E62C007EDF64 /* Data.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAF761322673C325004A9B9E /* Data.framework */; };
+		CA937E3F2678E649007EDF64 /* Domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAF7612526739EA7004A9B9E /* Domain.framework */; };
+		CA937E402678E64A007EDF64 /* Infra.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CADECA862677976500E53178 /* Infra.framework */; };
 		CADECA7926778B8400E53178 /* XCTestCase+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CADECA7826778B8400E53178 /* XCTestCase+Extensions.swift */; };
 		CADECA7B26778C3000E53178 /* TestFactories.swift in Sources */ = {isa = PBXBuildFile; fileRef = CADECA7A26778C3000E53178 /* TestFactories.swift */; };
 		CADECA7E26778C7000E53178 /* HttpClientSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = CADECA7D26778C7000E53178 /* HttpClientSpy.swift */; };
@@ -35,6 +39,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		CA937E3A2678E62C007EDF64 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CAF7610C26739DF8004A9B9E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CAF761312673C325004A9B9E;
+			remoteInfo = Data;
+		};
 		CADECA902677976500E53178 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = CAF7610C26739DF8004A9B9E /* Project object */;
@@ -93,6 +104,9 @@
 /* Begin PBXFileReference section */
 		CA937E292678E105007EDF64 /* AlamofireAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamofireAdapter.swift; sourceTree = "<group>"; };
 		CA937E2E2678E264007EDF64 /* UrlProtocolStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UrlProtocolStub.swift; sourceTree = "<group>"; };
+		CA937E342678E62C007EDF64 /* UseCasesIntegrationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UseCasesIntegrationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA937E362678E62C007EDF64 /* UseCasesIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UseCasesIntegrationTests.swift; sourceTree = "<group>"; };
+		CA937E382678E62C007EDF64 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CADECA7826778B8400E53178 /* XCTestCase+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCTestCase+Extensions.swift"; sourceTree = "<group>"; };
 		CADECA7A26778C3000E53178 /* TestFactories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestFactories.swift; sourceTree = "<group>"; };
 		CADECA7D26778C7000E53178 /* HttpClientSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpClientSpy.swift; sourceTree = "<group>"; };
@@ -120,6 +134,16 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		CA937E312678E62C007EDF64 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA937E3F2678E649007EDF64 /* Domain.framework in Frameworks */,
+				CA937E402678E64A007EDF64 /* Infra.framework in Frameworks */,
+				CA937E392678E62C007EDF64 /* Data.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CADECA832677976500E53178 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -180,6 +204,15 @@
 			path = Http;
 			sourceTree = "<group>";
 		};
+		CA937E352678E62C007EDF64 /* UseCasesIntegrationTests */ = {
+			isa = PBXGroup;
+			children = (
+				CA937E362678E62C007EDF64 /* UseCasesIntegrationTests.swift */,
+				CA937E382678E62C007EDF64 /* Info.plist */,
+			);
+			path = UseCasesIntegrationTests;
+			sourceTree = "<group>";
+		};
 		CADECA7726778B4900E53178 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
@@ -224,6 +257,7 @@
 				CAF7613E2673C326004A9B9E /* DataTests */,
 				CADECA872677976500E53178 /* Infra */,
 				CADECA922677976500E53178 /* InfraTests */,
+				CA937E352678E62C007EDF64 /* UseCasesIntegrationTests */,
 				CAF7611626739DF8004A9B9E /* Products */,
 				CAF761492673C450004A9B9E /* Frameworks */,
 			);
@@ -237,6 +271,7 @@
 				CAF7613A2673C326004A9B9E /* DataTests.xctest */,
 				CADECA862677976500E53178 /* Infra.framework */,
 				CADECA8E2677976500E53178 /* InfraTests.xctest */,
+				CA937E342678E62C007EDF64 /* UseCasesIntegrationTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -366,6 +401,24 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		CA937E332678E62C007EDF64 /* UseCasesIntegrationTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CA937E3C2678E62C007EDF64 /* Build configuration list for PBXNativeTarget "UseCasesIntegrationTests" */;
+			buildPhases = (
+				CA937E302678E62C007EDF64 /* Sources */,
+				CA937E312678E62C007EDF64 /* Frameworks */,
+				CA937E322678E62C007EDF64 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CA937E3B2678E62C007EDF64 /* PBXTargetDependency */,
+			);
+			name = UseCasesIntegrationTests;
+			productName = UseCasesIntegrationTests;
+			productReference = CA937E342678E62C007EDF64 /* UseCasesIntegrationTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		CADECA852677976500E53178 /* Infra */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = CADECA972677976500E53178 /* Build configuration list for PBXNativeTarget "Infra" */;
@@ -472,6 +525,9 @@
 				LastSwiftUpdateCheck = 1250;
 				LastUpgradeCheck = 1250;
 				TargetAttributes = {
+					CA937E332678E62C007EDF64 = {
+						CreatedOnToolsVersion = 12.5;
+					};
 					CADECA852677976500E53178 = {
 						CreatedOnToolsVersion = 12.5;
 						LastSwiftMigration = 1250;
@@ -513,11 +569,19 @@
 				CAF761392673C326004A9B9E /* DataTests */,
 				CADECA852677976500E53178 /* Infra */,
 				CADECA8D2677976500E53178 /* InfraTests */,
+				CA937E332678E62C007EDF64 /* UseCasesIntegrationTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		CA937E322678E62C007EDF64 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CADECA842677976500E53178 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -556,6 +620,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		CA937E302678E62C007EDF64 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA937E372678E62C007EDF64 /* UseCasesIntegrationTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CADECA822677976500E53178 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -612,6 +684,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		CA937E3B2678E62C007EDF64 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CAF761312673C325004A9B9E /* Data */;
+			targetProxy = CA937E3A2678E62C007EDF64 /* PBXContainerItemProxy */;
+		};
 		CADECA912677976500E53178 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = CADECA852677976500E53178 /* Infra */;
@@ -635,6 +712,46 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		CA937E3D2678E62C007EDF64 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = ZF258QDQ5C;
+				INFOPLIST_FILE = UseCasesIntegrationTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.3;
+				PRODUCT_BUNDLE_IDENTIFIER = "Heitor-Novais.UseCasesIntegrationTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		CA937E3E2678E62C007EDF64 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = ZF258QDQ5C;
+				INFOPLIST_FILE = UseCasesIntegrationTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.3;
+				PRODUCT_BUNDLE_IDENTIFIER = "Heitor-Novais.UseCasesIntegrationTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 		CADECA982677976500E53178 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1009,6 +1126,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		CA937E3C2678E62C007EDF64 /* Build configuration list for PBXNativeTarget "UseCasesIntegrationTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CA937E3D2678E62C007EDF64 /* Debug */,
+				CA937E3E2678E62C007EDF64 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		CADECA972677976500E53178 /* Build configuration list for PBXNativeTarget "Infra" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
