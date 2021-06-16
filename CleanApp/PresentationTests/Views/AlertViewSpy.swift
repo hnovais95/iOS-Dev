@@ -9,9 +9,13 @@ import Presentation
 
 class AlertViewSpy: AlertView {
     
-    var viewModel: AlertViewModel?
+    var notify: ((AlertViewModel) -> Void)?
+    
+    func observer(completion: @escaping (AlertViewModel) -> Void) {
+        self.notify = completion
+    }
     
     func showMessage(viewModel: AlertViewModel) {
-        self.viewModel = viewModel
+        self.notify?(viewModel)
     }
 }
