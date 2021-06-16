@@ -23,6 +23,30 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                             </button>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="biL-hn-Yw6" userLabel="Name Text Field">
+                                <rect key="frame" x="159" y="128" width="97" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nnj-NV-UVc" userLabel="Email Text Field">
+                                <rect key="frame" x="159" y="177" width="97" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="d6O-Ys-If4" userLabel="Password Text Field">
+                                <rect key="frame" x="159" y="225" width="97" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XhL-qT-9Us" userLabel="Password Confirmation Text Field">
+                                <rect key="frame" x="159" y="275" width="97" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -32,7 +56,11 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="emailTextField" destination="nnj-NV-UVc" id="pzm-Ps-YAG"/>
                         <outlet property="loadingIndicator" destination="yPB-bV-QYI" id="JZO-J1-sCf"/>
+                        <outlet property="nameTextField" destination="biL-hn-Yw6" id="siu-a2-u5E"/>
+                        <outlet property="passwordConfirmation" destination="XhL-qT-9Us" id="n0Q-QQ-EpM"/>
+                        <outlet property="passwordTextField" destination="d6O-Ys-If4" id="OO7-F3-4Fs"/>
                         <outlet property="saveButton" destination="3ah-ne-LFh" id="wc3-qM-IWH"/>
                     </connections>
                 </viewController>

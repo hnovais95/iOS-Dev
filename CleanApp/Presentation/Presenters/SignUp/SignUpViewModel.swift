@@ -5,7 +5,9 @@
 //  Created by Heitor Novais | Gerencianet on 16/06/21.
 //
 
-public struct SignUpViewModel {
+import Domain
+
+public struct SignUpViewModel: Model {
     
     public var name: String?
     public var email: String?
