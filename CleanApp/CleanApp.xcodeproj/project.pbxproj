@@ -35,6 +35,7 @@
 		CA972BBF267A642700163683 /* SignUp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA972BBE267A642700163683 /* SignUp.storyboard */; };
 		CA972BC0267A675E00163683 /* Presentation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA937E462678F537007EDF64 /* Presentation.framework */; };
 		CA972BC1267A675E00163683 /* Presentation.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CA937E462678F537007EDF64 /* Presentation.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CA972BCB267A7E1200163683 /* TestFactories.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA972BCA267A7E1200163683 /* TestFactories.swift */; };
 		CADECA7926778B8400E53178 /* XCTestCase+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CADECA7826778B8400E53178 /* XCTestCase+Extensions.swift */; };
 		CADECA7B26778C3000E53178 /* TestFactories.swift in Sources */ = {isa = PBXBuildFile; fileRef = CADECA7A26778C3000E53178 /* TestFactories.swift */; };
 		CADECA7E26778C7000E53178 /* HttpClientSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = CADECA7D26778C7000E53178 /* HttpClientSpy.swift */; };
@@ -184,6 +185,7 @@
 		CA972BB2267A5C8500163683 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CA972BBA267A634500163683 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		CA972BBE267A642700163683 /* SignUp.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SignUp.storyboard; sourceTree = "<group>"; };
+		CA972BCA267A7E1200163683 /* TestFactories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestFactories.swift; sourceTree = "<group>"; };
 		CADECA7826778B8400E53178 /* XCTestCase+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCTestCase+Extensions.swift"; sourceTree = "<group>"; };
 		CADECA7A26778C3000E53178 /* TestFactories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestFactories.swift; sourceTree = "<group>"; };
 		CADECA7D26778C7000E53178 /* HttpClientSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpClientSpy.swift; sourceTree = "<group>"; };
@@ -433,8 +435,7 @@
 		CA972BA4267A5C8400163683 /* UI */ = {
 			isa = PBXGroup;
 			children = (
-				CA972BBA267A634500163683 /* SignUpViewController.swift */,
-				CA972BBE267A642700163683 /* SignUp.storyboard */,
+				CA972BC7267A7D4600163683 /* Scenes */,
 				CA972BA6267A5C8400163683 /* Info.plist */,
 			);
 			path = UI;
@@ -443,10 +444,52 @@
 		CA972BAF267A5C8500163683 /* UITests */ = {
 			isa = PBXGroup;
 			children = (
-				CA972BB0267A5C8500163683 /* SignUpViewControllerTests.swift */,
+				CA972BC9267A7DF100163683 /* Helpers */,
+				CA972BC8267A7D5200163683 /* Scenes */,
 				CA972BB2267A5C8500163683 /* Info.plist */,
 			);
 			path = UITests;
+			sourceTree = "<group>";
+		};
+		CA972BC5267A7D1100163683 /* SignUp */ = {
+			isa = PBXGroup;
+			children = (
+				CA972BBA267A634500163683 /* SignUpViewController.swift */,
+				CA972BBE267A642700163683 /* SignUp.storyboard */,
+			);
+			path = SignUp;
+			sourceTree = "<group>";
+		};
+		CA972BC6267A7D2B00163683 /* SignUp */ = {
+			isa = PBXGroup;
+			children = (
+				CA972BB0267A5C8500163683 /* SignUpViewControllerTests.swift */,
+			);
+			path = SignUp;
+			sourceTree = "<group>";
+		};
+		CA972BC7267A7D4600163683 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				CA972BC5267A7D1100163683 /* SignUp */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		CA972BC8267A7D5200163683 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				CA972BC6267A7D2B00163683 /* SignUp */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		CA972BC9267A7DF100163683 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				CA972BCA267A7E1200163683 /* TestFactories.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 		CADECA7726778B4900E53178 /* Helpers */ = {
@@ -1047,6 +1090,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA972BCB267A7E1200163683 /* TestFactories.swift in Sources */,
 				CA972BB1267A5C8500163683 /* SignUpViewControllerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
