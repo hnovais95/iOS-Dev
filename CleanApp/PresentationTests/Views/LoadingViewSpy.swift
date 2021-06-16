@@ -9,9 +9,13 @@ import Presentation
 
 class LoadingViewSpy: LoadingView {
     
-    var viewModel: LoadingViewModel?
+   var notify: ((LoadingViewModel) -> Void)?
+    
+    func observer(completion: @escaping (LoadingViewModel) -> Void) {
+        self.notify = completion
+    }
     
     func display(viewModel: LoadingViewModel) {
-        self.viewModel = viewModel
+        self.notify?(viewModel)
     }
 }
