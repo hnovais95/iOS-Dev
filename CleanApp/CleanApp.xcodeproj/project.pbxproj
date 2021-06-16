@@ -33,6 +33,8 @@
 		CA972BB1267A5C8500163683 /* SignUpViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA972BB0267A5C8500163683 /* SignUpViewControllerTests.swift */; };
 		CA972BBB267A634500163683 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA972BBA267A634500163683 /* SignUpViewController.swift */; };
 		CA972BBF267A642700163683 /* SignUp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA972BBE267A642700163683 /* SignUp.storyboard */; };
+		CA972BC0267A675E00163683 /* Presentation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA937E462678F537007EDF64 /* Presentation.framework */; };
+		CA972BC1267A675E00163683 /* Presentation.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CA937E462678F537007EDF64 /* Presentation.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		CADECA7926778B8400E53178 /* XCTestCase+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CADECA7826778B8400E53178 /* XCTestCase+Extensions.swift */; };
 		CADECA7B26778C3000E53178 /* TestFactories.swift in Sources */ = {isa = PBXBuildFile; fileRef = CADECA7A26778C3000E53178 /* TestFactories.swift */; };
 		CADECA7E26778C7000E53178 /* HttpClientSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = CADECA7D26778C7000E53178 /* HttpClientSpy.swift */; };
@@ -80,6 +82,13 @@
 			remoteGlobalIDString = CA972BA2267A5C8400163683;
 			remoteInfo = UI;
 		};
+		CA972BC2267A675E00163683 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CAF7610C26739DF8004A9B9E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CA937E452678F537007EDF64;
+			remoteInfo = Presentation;
+		};
 		CADECA902677976500E53178 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = CAF7610C26739DF8004A9B9E /* Project object */;
@@ -111,6 +120,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		CA972BC4267A675E00163683 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				CA972BC1267A675E00163683 /* Presentation.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CADECAA8267799BC00E53178 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -221,6 +241,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA972BC0267A675E00163683 /* Presentation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -700,10 +721,12 @@
 				CA972B9F267A5C8400163683 /* Sources */,
 				CA972BA0267A5C8400163683 /* Frameworks */,
 				CA972BA1267A5C8400163683 /* Resources */,
+				CA972BC4267A675E00163683 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				CA972BC3267A675E00163683 /* PBXTargetDependency */,
 			);
 			name = UI;
 			productName = UI;
@@ -1098,6 +1121,11 @@
 			isa = PBXTargetDependency;
 			target = CA972BA2267A5C8400163683 /* UI */;
 			targetProxy = CA972BAD267A5C8500163683 /* PBXContainerItemProxy */;
+		};
+		CA972BC3267A675E00163683 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CA937E452678F537007EDF64 /* Presentation */;
+			targetProxy = CA972BC2267A675E00163683 /* PBXContainerItemProxy */;
 		};
 		CADECA912677976500E53178 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
