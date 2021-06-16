@@ -20,6 +20,7 @@
 		CA937E6126792D42007EDF64 /* AlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA937E6026792D42007EDF64 /* AlertView.swift */; };
 		CA937E6726792FED007EDF64 /* AlertViewSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA937E6626792FED007EDF64 /* AlertViewSpy.swift */; };
 		CA937E6A267933E1007EDF64 /* EmailValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA937E69267933E1007EDF64 /* EmailValidator.swift */; };
+		CA972B88267A296400163683 /* AccountModelFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = CADECA7F26778CD500E53178 /* AccountModelFactory.swift */; };
 		CADECA7926778B8400E53178 /* XCTestCase+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CADECA7826778B8400E53178 /* XCTestCase+Extensions.swift */; };
 		CADECA7B26778C3000E53178 /* TestFactories.swift in Sources */ = {isa = PBXBuildFile; fileRef = CADECA7A26778C3000E53178 /* TestFactories.swift */; };
 		CADECA7E26778C7000E53178 /* HttpClientSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = CADECA7D26778C7000E53178 /* HttpClientSpy.swift */; };
@@ -814,6 +815,7 @@
 			files = (
 				CA937E6726792FED007EDF64 /* AlertViewSpy.swift in Sources */,
 				CA937E542678F538007EDF64 /* SignUpPresenterTests.swift in Sources */,
+				CA972B88267A296400163683 /* AccountModelFactory.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

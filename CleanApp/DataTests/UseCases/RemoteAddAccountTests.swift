@@ -69,10 +69,6 @@ extension RemoteAddAccountTests {
         return (sut, httpClientSpy)
     }
     
-    func makeAddAccountModel() -> AddAccountModel {
-        return AddAccountModel(name: "any_name", email: "any_email@domain.com", password: "any_password", passwordConfirmation: "any_password")
-    }
-    
     func expect(_ sut: RemoteAddAccount, completeWith expectedResult: Result<AccountModel, DomainError>, when action: () -> Void, file: StaticString = #file, line: UInt = #line) {
         let exp = expectation(description: "waiting")
         let addAccountModel = makeAddAccountModel()
