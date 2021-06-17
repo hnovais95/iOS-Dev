@@ -28,14 +28,14 @@ public final class SignUpPresenter {
         } else {
             loadingView.display(viewModel: LoadingViewModel(isLoading: true))
             addAccount.add(addAccountModel: SignUpMapper.toAccountModel(viewModel: viewModel)) { [weak self] result in
-                guard let self = self else { return }                
+                guard let self = self else { return }
+                self.loadingView.display(viewModel: LoadingViewModel(isLoading: false))
                 switch result {
                 case .failure:
                     self.alertView.showMessage(viewModel: AlertViewModel(title: "Erro", message: "Algo inesperado aconteceu, tente novamente em alguns instantes."))
                 case .success:
                     self.alertView.showMessage(viewModel: AlertViewModel(title: "Sucesso", message: "Conta criada com sucesso."))
                 }
-                self.loadingView.display(viewModel: LoadingViewModel(isLoading: false))
             }
         }
     }
