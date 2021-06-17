@@ -5,12 +5,19 @@
 //  Created by Heitor Novais | Gerencianet on 17/06/21.
 //
 
-import Domain
+import Foundation
 import UI
+import Presentation
+import Validation
+import Domain
 
 public final class SignUpComposer {
     
-    public static func composeWith(addAccount: AddAccount) -> SignUpViewController {
-        return ControllerFactory.makeSignUp(addAccount: addAccount)
+    public static func composeControllerWith(addAccount: AddAccount) -> SignUpViewController {
+        let controller = SignUpViewController.instantiate()
+        let emailValidatorAdapter = EmailValidatorAdapter()
+        let presenter = SignUpPresenter(alertView: WeakVarProxy(controller), emailValidator: emailValidatorAdapter, addAccount: addAccount, loadingView: WeakVarProxy(controller))
+        controller.signUp = presenter.signUp
+        return controller
     }
 }
