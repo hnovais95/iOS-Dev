@@ -515,6 +515,7 @@
 			isa = PBXGroup;
 			children = (
 				CA924F8C267BB9C9006D2733 /* Compesers */,
+				CA924F4A267B8006006D2733 /* Info.plist */,
 			);
 			path = MainTests;
 			sourceTree = "<group>";
@@ -818,7 +819,6 @@
 				CA924EB0267B77E4006D2733 /* ValidationTests */,
 				CA924F30267B8003006D2733 /* Main */,
 				CA924F47267B8006006D2733 /* MainTests */,
-				CA924F4A267B8006006D2733 /* Info.plist */,
 				CAF7611626739DF8004A9B9E /* Products */,
 				CAF761492673C450004A9B9E /* Frameworks */,
 			);
