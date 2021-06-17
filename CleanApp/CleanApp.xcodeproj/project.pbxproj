@@ -31,7 +31,7 @@
 		CA924F74267B81CB006D2733 /* Validation.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CA924EA4267B77E3006D2733 /* Validation.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		CA924F7C267B8D67006D2733 /* UseCaseFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA924F7B267B8D67006D2733 /* UseCaseFactory.swift */; };
 		CA924F7F267B8DEB006D2733 /* SignUpComposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA924F7E267B8DEB006D2733 /* SignUpComposer.swift */; };
-		CA924F81267B9049006D2733 /* SignUpIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA924F80267B9049006D2733 /* SignUpIntegrationTests.swift */; };
+		CA924F81267B9049006D2733 /* SignUpComposerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA924F80267B9049006D2733 /* SignUpComposerTests.swift */; };
 		CA924F82267B90DB006D2733 /* AddAccountSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA972B99267A594400163683 /* AddAccountSpy.swift */; };
 		CA924F83267B912B006D2733 /* XCTestCase+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CADECA7826778B8400E53178 /* XCTestCase+Extensions.swift */; };
 		CA924F86267B9996006D2733 /* WeakVarProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA924F85267B9996006D2733 /* WeakVarProxy.swift */; };
@@ -294,7 +294,7 @@
 		CA924F4A267B8006006D2733 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CA924F7B267B8D67006D2733 /* UseCaseFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UseCaseFactory.swift; sourceTree = "<group>"; };
 		CA924F7E267B8DEB006D2733 /* SignUpComposer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpComposer.swift; sourceTree = "<group>"; };
-		CA924F80267B9049006D2733 /* SignUpIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpIntegrationTests.swift; sourceTree = "<group>"; };
+		CA924F80267B9049006D2733 /* SignUpComposerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpComposerTests.swift; sourceTree = "<group>"; };
 		CA924F85267B9996006D2733 /* WeakVarProxy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeakVarProxy.swift; sourceTree = "<group>"; };
 		CA924F88267BB076006D2733 /* Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
 		CA924F89267BB14C006D2733 /* Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
@@ -514,8 +514,7 @@
 		CA924F47267B8006006D2733 /* MainTests */ = {
 			isa = PBXGroup;
 			children = (
-				CA924F4A267B8006006D2733 /* Info.plist */,
-				CA924F80267B9049006D2733 /* SignUpIntegrationTests.swift */,
+				CA924F8C267BB9C9006D2733 /* Compesers */,
 			);
 			path = MainTests;
 			sourceTree = "<group>";
@@ -552,6 +551,14 @@
 				CA924F89267BB14C006D2733 /* Release.xcconfig */,
 			);
 			path = Env;
+			sourceTree = "<group>";
+		};
+		CA924F8C267BB9C9006D2733 /* Compesers */ = {
+			isa = PBXGroup;
+			children = (
+				CA924F80267B9049006D2733 /* SignUpComposerTests.swift */,
+			);
+			path = Compesers;
 			sourceTree = "<group>";
 		};
 		CA937E282678E0E7007EDF64 /* Http */ = {
@@ -811,6 +818,7 @@
 				CA924EB0267B77E4006D2733 /* ValidationTests */,
 				CA924F30267B8003006D2733 /* Main */,
 				CA924F47267B8006006D2733 /* MainTests */,
+				CA924F4A267B8006006D2733 /* Info.plist */,
 				CAF7611626739DF8004A9B9E /* Products */,
 				CAF761492673C450004A9B9E /* Frameworks */,
 			);
@@ -1487,7 +1495,7 @@
 			files = (
 				CA924F82267B90DB006D2733 /* AddAccountSpy.swift in Sources */,
 				CA924F83267B912B006D2733 /* XCTestCase+Extensions.swift in Sources */,
-				CA924F81267B9049006D2733 /* SignUpIntegrationTests.swift in Sources */,
+				CA924F81267B9049006D2733 /* SignUpComposerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
