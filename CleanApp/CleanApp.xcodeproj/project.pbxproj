@@ -32,6 +32,9 @@
 		CA924F7A267B8242006D2733 /* ControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA924F79267B8242006D2733 /* ControllerFactory.swift */; };
 		CA924F7C267B8D67006D2733 /* UseCaseFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA924F7B267B8D67006D2733 /* UseCaseFactory.swift */; };
 		CA924F7F267B8DEB006D2733 /* SignUpComposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA924F7E267B8DEB006D2733 /* SignUpComposer.swift */; };
+		CA924F81267B9049006D2733 /* SignUpIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA924F80267B9049006D2733 /* SignUpIntegrationTests.swift */; };
+		CA924F82267B90DB006D2733 /* AddAccountSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA972B99267A594400163683 /* AddAccountSpy.swift */; };
+		CA924F83267B912B006D2733 /* XCTestCase+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CADECA7826778B8400E53178 /* XCTestCase+Extensions.swift */; };
 		CA937E2A2678E105007EDF64 /* AlamofireAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA937E292678E105007EDF64 /* AlamofireAdapter.swift */; };
 		CA937E2F2678E264007EDF64 /* UrlProtocolStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA937E2E2678E264007EDF64 /* UrlProtocolStub.swift */; };
 		CA937E372678E62C007EDF64 /* UseCasesIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA937E362678E62C007EDF64 /* UseCasesIntegrationTests.swift */; };
@@ -291,6 +294,7 @@
 		CA924F79267B8242006D2733 /* ControllerFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControllerFactory.swift; sourceTree = "<group>"; };
 		CA924F7B267B8D67006D2733 /* UseCaseFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UseCaseFactory.swift; sourceTree = "<group>"; };
 		CA924F7E267B8DEB006D2733 /* SignUpComposer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpComposer.swift; sourceTree = "<group>"; };
+		CA924F80267B9049006D2733 /* SignUpIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpIntegrationTests.swift; sourceTree = "<group>"; };
 		CA937E292678E105007EDF64 /* AlamofireAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamofireAdapter.swift; sourceTree = "<group>"; };
 		CA937E2E2678E264007EDF64 /* UrlProtocolStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UrlProtocolStub.swift; sourceTree = "<group>"; };
 		CA937E342678E62C007EDF64 /* UseCasesIntegrationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UseCasesIntegrationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -505,6 +509,7 @@
 			isa = PBXGroup;
 			children = (
 				CA924F4A267B8006006D2733 /* Info.plist */,
+				CA924F80267B9049006D2733 /* SignUpIntegrationTests.swift */,
 			);
 			path = MainTests;
 			sourceTree = "<group>";
@@ -1245,6 +1250,7 @@
 					};
 					CA924F43267B8006006D2733 = {
 						CreatedOnToolsVersion = 12.5;
+						LastSwiftMigration = 1250;
 						TestTargetID = CA924F2E267B8003006D2733;
 					};
 					CA937E332678E62C007EDF64 = {
@@ -1455,6 +1461,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA924F82267B90DB006D2733 /* AddAccountSpy.swift in Sources */,
+				CA924F83267B912B006D2733 /* XCTestCase+Extensions.swift in Sources */,
+				CA924F81267B9049006D2733 /* SignUpIntegrationTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1812,6 +1821,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ZF258QDQ5C;
 				INFOPLIST_FILE = MainTests/Info.plist;
@@ -1823,6 +1833,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "Heitor-Novais.MainTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Main.app/Main";
@@ -1834,6 +1845,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ZF258QDQ5C;
 				INFOPLIST_FILE = MainTests/Info.plist;
