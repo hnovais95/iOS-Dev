@@ -5,11 +5,11 @@
 //  Created by Heitor Novais | Gerencianet on 16/06/21.
 //
 
-import Presentation
+import Validation
 
 class EmailValidatorSpy: EmailValidator {
     
-    private var isValid = true
+    var isValid = true
     var email: String?
     
     func isValid(email: String) -> Bool {

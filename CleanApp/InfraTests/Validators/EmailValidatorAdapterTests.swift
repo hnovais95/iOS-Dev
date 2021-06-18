@@ -5,9 +5,8 @@
 //  Created by Heitor Novais | Gerencianet on 17/06/21.
 //
 
-import Foundation
 import XCTest
-import Validation
+import Infra
 
 class EmailValidatorAdapterTests: XCTestCase {
 

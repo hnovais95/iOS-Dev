@@ -6,7 +6,7 @@
 //
 
 import Foundation
-import Presentation
+import Validation
 
 public class EmailValidatorAdapter: EmailValidator {
     
