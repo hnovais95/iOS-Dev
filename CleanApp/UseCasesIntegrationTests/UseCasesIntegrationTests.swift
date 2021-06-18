@@ -21,7 +21,7 @@ class UseCasesIntegrationTests: XCTestCase {
         sut.add(addAccountModel: addAccountModel) { result in
             switch result {
             case .success(let account):
-                XCTAssertNotNil(account.id)
+                XCTAssertNotNil(account.accessToken)
                 XCTAssertEqual(account.name, addAccountModel.name)
                 XCTAssertEqual(account.email, addAccountModel.email)
             case .failure:
