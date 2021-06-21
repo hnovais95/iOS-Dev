@@ -14,6 +14,7 @@
 		CA0F2BE32680C5D600B340F1 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA0F2BE22680C5D600B340F1 /* LoginViewModel.swift */; };
 		CA0F2BE52680C61600B340F1 /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA0F2BE42680C61600B340F1 /* LoginPresenter.swift */; };
 		CA0F2BE72680C7F100B340F1 /* AuthenticationSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA0F2BE62680C7F100B340F1 /* AuthenticationSpy.swift */; };
+		CA0F2BEA2680D94200B340F1 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA0F2BE92680D94200B340F1 /* Login.storyboard */; };
 		CA7D5CE8267CBFC8005D24DB /* RequiredFieldValidationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA7D5CE7267CBFC8005D24DB /* RequiredFieldValidationTests.swift */; };
 		CA7D5CEC267CC443005D24DB /* RequiredFieldValidation.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA7D5CEB267CC443005D24DB /* RequiredFieldValidation.swift */; };
 		CA7D5CED267CC51B005D24DB /* XCTestCase+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CADECA7826778B8400E53178 /* XCTestCase+Extensions.swift */; };
@@ -323,6 +324,7 @@
 		CA0F2BE22680C5D600B340F1 /* LoginViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		CA0F2BE42680C61600B340F1 /* LoginPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
 		CA0F2BE62680C7F100B340F1 /* AuthenticationSpy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthenticationSpy.swift; sourceTree = "<group>"; };
+		CA0F2BE92680D94200B340F1 /* Login.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		CA7D5CE7267CBFC8005D24DB /* RequiredFieldValidationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequiredFieldValidationTests.swift; sourceTree = "<group>"; };
 		CA7D5CEB267CC443005D24DB /* RequiredFieldValidation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequiredFieldValidation.swift; sourceTree = "<group>"; };
 		CA7D5CF0267CC6FE005D24DB /* CompareFieldsValidationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompareFieldsValidationTests.swift; sourceTree = "<group>"; };
@@ -556,6 +558,14 @@
 			isa = PBXGroup;
 			children = (
 				CA0F2BE02680C49500B340F1 /* LoginPresenterTests.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		CA0F2BE82680D5B000B340F1 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				CA0F2BE92680D94200B340F1 /* Login.storyboard */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -925,6 +935,7 @@
 			isa = PBXGroup;
 			children = (
 				CA972BCC267A874700163683 /* Helpers */,
+				CA0F2BE82680D5B000B340F1 /* Login */,
 				CA972BC5267A7D1100163683 /* SignUp */,
 			);
 			path = Scenes;
@@ -1610,6 +1621,7 @@
 			files = (
 				CA972BBF267A642700163683 /* SignUp.storyboard in Resources */,
 				CA7D5D12267D2523005D24DB /* Images.xcassets in Resources */,
+				CA0F2BEA2680D94200B340F1 /* Login.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
