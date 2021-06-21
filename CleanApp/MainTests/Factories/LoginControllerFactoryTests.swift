@@ -36,7 +36,7 @@ extension LoginControllerFactoryTests {
     
     func makeSut(file: StaticString = #filePath, line: UInt = #line) -> (LoginViewController, AuthenticationSpy) {
         let authenticationSpy = AuthenticationSpy()
-        let sut = makeLoginController(authentication: MainQueueDispatchDecortator(authenticationSpy))
+        let sut = makeLoginControllerWith(authentication: MainQueueDispatchDecortator(authenticationSpy))
         checkMemoryLeak(for: sut, file: file, line: line)
         checkMemoryLeak(for: authenticationSpy, file: file, line: line)
         return (sut, authenticationSpy)

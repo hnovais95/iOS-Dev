@@ -27,6 +27,7 @@
 		CA0F2BFF2680FF1F00B340F1 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA0F2BFE2680FF1F00B340F1 /* WelcomeViewController.swift */; };
 		CA0F2C01268108F100B340F1 /* WelcomeRouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA0F2C00268108F100B340F1 /* WelcomeRouterTests.swift */; };
 		CA0F2C042681107700B340F1 /* WelcomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA0F2C022681103B00B340F1 /* WelcomeRouter.swift */; };
+		CA0F2C0626811AA400B340F1 /* WelcomeControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA0F2C0526811AA400B340F1 /* WelcomeControllerFactory.swift */; };
 		CA7D5CE8267CBFC8005D24DB /* RequiredFieldValidationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA7D5CE7267CBFC8005D24DB /* RequiredFieldValidationTests.swift */; };
 		CA7D5CEC267CC443005D24DB /* RequiredFieldValidation.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA7D5CEB267CC443005D24DB /* RequiredFieldValidation.swift */; };
 		CA7D5CED267CC51B005D24DB /* XCTestCase+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CADECA7826778B8400E53178 /* XCTestCase+Extensions.swift */; };
@@ -347,6 +348,7 @@
 		CA0F2BFE2680FF1F00B340F1 /* WelcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		CA0F2C00268108F100B340F1 /* WelcomeRouterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeRouterTests.swift; sourceTree = "<group>"; };
 		CA0F2C022681103B00B340F1 /* WelcomeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeRouter.swift; sourceTree = "<group>"; };
+		CA0F2C0526811AA400B340F1 /* WelcomeControllerFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeControllerFactory.swift; sourceTree = "<group>"; };
 		CA7D5CE7267CBFC8005D24DB /* RequiredFieldValidationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequiredFieldValidationTests.swift; sourceTree = "<group>"; };
 		CA7D5CEB267CC443005D24DB /* RequiredFieldValidation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequiredFieldValidation.swift; sourceTree = "<group>"; };
 		CA7D5CF0267CC6FE005D24DB /* CompareFieldsValidationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompareFieldsValidationTests.swift; sourceTree = "<group>"; };
@@ -683,6 +685,7 @@
 			children = (
 				CA924F7E267B8DEB006D2733 /* SignUpControllerFactory.swift */,
 				CA0F2BF42680F1FF00B340F1 /* LoginControllerFactory.swift */,
+				CA0F2C0526811AA400B340F1 /* WelcomeControllerFactory.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -1761,6 +1764,7 @@
 				CA924F7C267B8D67006D2733 /* RemoteAddAccountFactory.swift in Sources */,
 				CA924F90267BCDF6006D2733 /* MainQueueDispatchDecorator.swift in Sources */,
 				CA924F32267B8003006D2733 /* AppDelegate.swift in Sources */,
+				CA0F2C0626811AA400B340F1 /* WelcomeControllerFactory.swift in Sources */,
 				CA7D5D06267D1E19005D24DB /* ApiUrlFactory.swift in Sources */,
 				CA924F8B267BB1C9006D2733 /* Environment.swift in Sources */,
 				CA0F2BF52680F1FF00B340F1 /* LoginControllerFactory.swift in Sources */,
