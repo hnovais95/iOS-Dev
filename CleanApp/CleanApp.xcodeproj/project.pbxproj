@@ -15,6 +15,8 @@
 		CA0F2BE52680C61600B340F1 /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA0F2BE42680C61600B340F1 /* LoginPresenter.swift */; };
 		CA0F2BE72680C7F100B340F1 /* AuthenticationSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA0F2BE62680C7F100B340F1 /* AuthenticationSpy.swift */; };
 		CA0F2BEA2680D94200B340F1 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA0F2BE92680D94200B340F1 /* Login.storyboard */; };
+		CA0F2BEC2680DAF700B340F1 /* LoginViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA0F2BEB2680DAF700B340F1 /* LoginViewControllerTests.swift */; };
+		CA0F2BEF2680DBA000B340F1 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA0F2BEE2680DBA000B340F1 /* LoginViewController.swift */; };
 		CA7D5CE8267CBFC8005D24DB /* RequiredFieldValidationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA7D5CE7267CBFC8005D24DB /* RequiredFieldValidationTests.swift */; };
 		CA7D5CEC267CC443005D24DB /* RequiredFieldValidation.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA7D5CEB267CC443005D24DB /* RequiredFieldValidation.swift */; };
 		CA7D5CED267CC51B005D24DB /* XCTestCase+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CADECA7826778B8400E53178 /* XCTestCase+Extensions.swift */; };
@@ -325,6 +327,8 @@
 		CA0F2BE42680C61600B340F1 /* LoginPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
 		CA0F2BE62680C7F100B340F1 /* AuthenticationSpy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthenticationSpy.swift; sourceTree = "<group>"; };
 		CA0F2BE92680D94200B340F1 /* Login.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+		CA0F2BEB2680DAF700B340F1 /* LoginViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewControllerTests.swift; sourceTree = "<group>"; };
+		CA0F2BEE2680DBA000B340F1 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		CA7D5CE7267CBFC8005D24DB /* RequiredFieldValidationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequiredFieldValidationTests.swift; sourceTree = "<group>"; };
 		CA7D5CEB267CC443005D24DB /* RequiredFieldValidation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequiredFieldValidation.swift; sourceTree = "<group>"; };
 		CA7D5CF0267CC6FE005D24DB /* CompareFieldsValidationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompareFieldsValidationTests.swift; sourceTree = "<group>"; };
@@ -565,7 +569,16 @@
 		CA0F2BE82680D5B000B340F1 /* Login */ = {
 			isa = PBXGroup;
 			children = (
+				CA0F2BEE2680DBA000B340F1 /* LoginViewController.swift */,
 				CA0F2BE92680D94200B340F1 /* Login.storyboard */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		CA0F2BED2680DAFC00B340F1 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				CA0F2BEB2680DAF700B340F1 /* LoginViewControllerTests.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -944,6 +957,7 @@
 		CA972BC8267A7D5200163683 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				CA0F2BED2680DAFC00B340F1 /* Login */,
 				CA972BC6267A7D2B00163683 /* SignUp */,
 			);
 			path = Scenes;
@@ -1772,6 +1786,7 @@
 				CA7D5D19267D2B84005D24DB /* RoundedTextField.swift in Sources */,
 				CA972BBB267A634500163683 /* SignUpViewController.swift in Sources */,
 				CA924E9E267B7397006D2733 /* Storyboarded.swift in Sources */,
+				CA0F2BEF2680DBA000B340F1 /* LoginViewController.swift in Sources */,
 				CA7D5D16267D29B3005D24DB /* Color.swift in Sources */,
 				CA7D5D1C267D2E1E005D24DB /* NavigationController.swift in Sources */,
 				CA7D5D14267D2966005D24DB /* UIColor+Extensions.swift in Sources */,
@@ -1782,6 +1797,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA0F2BEC2680DAF700B340F1 /* LoginViewControllerTests.swift in Sources */,
 				CA972BCB267A7E1200163683 /* TestFactories.swift in Sources */,
 				CA972BB1267A5C8500163683 /* SignUpViewControllerTests.swift in Sources */,
 			);
