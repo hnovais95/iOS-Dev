@@ -91,7 +91,7 @@
                     <connections>
                         <outlet property="emailTextField" destination="nnj-NV-UVc" id="pzm-Ps-YAG"/>
                         <outlet property="loadingIndicator" destination="yPB-bV-QYI" id="JZO-J1-sCf"/>
-                        <outlet property="loginButton" destination="3ah-ne-LFh" id="kWy-0o-KpE"/>
+                        <outlet property="loginButton" destination="3ah-ne-LFh" id="gnz-f1-2EG"/>
                         <outlet property="passwordTextField" destination="d6O-Ys-If4" id="OO7-F3-4Fs"/>
                     </connections>
                 </viewController>
