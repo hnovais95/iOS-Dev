@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CA0F2BD92680B41200B340F1 /* Authentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA0F2BD82680B41200B340F1 /* Authentication.swift */; };
 		CA7D5CE8267CBFC8005D24DB /* RequiredFieldValidationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA7D5CE7267CBFC8005D24DB /* RequiredFieldValidationTests.swift */; };
 		CA7D5CEC267CC443005D24DB /* RequiredFieldValidation.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA7D5CEB267CC443005D24DB /* RequiredFieldValidation.swift */; };
 		CA7D5CED267CC51B005D24DB /* XCTestCase+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CADECA7826778B8400E53178 /* XCTestCase+Extensions.swift */; };
@@ -309,6 +310,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		CA0F2BD82680B41200B340F1 /* Authentication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Authentication.swift; sourceTree = "<group>"; };
 		CA7D5CE7267CBFC8005D24DB /* RequiredFieldValidationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequiredFieldValidationTests.swift; sourceTree = "<group>"; };
 		CA7D5CEB267CC443005D24DB /* RequiredFieldValidation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequiredFieldValidation.swift; sourceTree = "<group>"; };
 		CA7D5CF0267CC6FE005D24DB /* CompareFieldsValidationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompareFieldsValidationTests.swift; sourceTree = "<group>"; };
@@ -1048,6 +1050,7 @@
 			isa = PBXGroup;
 			children = (
 				CAF761502673C57D004A9B9E /* AddAccount.swift */,
+				CA0F2BD82680B41200B340F1 /* Authentication.swift */,
 			);
 			path = UseCases;
 			sourceTree = "<group>";
@@ -1762,6 +1765,7 @@
 				CAF761582673D1AB004A9B9E /* DomainError.swift in Sources */,
 				CAF7615A2673D6AC004A9B9E /* AccountModel.swift in Sources */,
 				CAF761512673C57D004A9B9E /* AddAccount.swift in Sources */,
+				CA0F2BD92680B41200B340F1 /* Authentication.swift in Sources */,
 				CAF7615C2673D811004A9B9E /* Model.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
