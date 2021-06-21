@@ -28,6 +28,7 @@
 		CA0F2C01268108F100B340F1 /* WelcomeRouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA0F2C00268108F100B340F1 /* WelcomeRouterTests.swift */; };
 		CA0F2C042681107700B340F1 /* WelcomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA0F2C022681103B00B340F1 /* WelcomeRouter.swift */; };
 		CA0F2C0626811AA400B340F1 /* WelcomeControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA0F2C0526811AA400B340F1 /* WelcomeControllerFactory.swift */; };
+		CA0F2C0926811D4200B340F1 /* ValidationBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA0F2C0826811D4200B340F1 /* ValidationBuilder.swift */; };
 		CA7D5CE8267CBFC8005D24DB /* RequiredFieldValidationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA7D5CE7267CBFC8005D24DB /* RequiredFieldValidationTests.swift */; };
 		CA7D5CEC267CC443005D24DB /* RequiredFieldValidation.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA7D5CEB267CC443005D24DB /* RequiredFieldValidation.swift */; };
 		CA7D5CED267CC51B005D24DB /* XCTestCase+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CADECA7826778B8400E53178 /* XCTestCase+Extensions.swift */; };
@@ -349,6 +350,7 @@
 		CA0F2C00268108F100B340F1 /* WelcomeRouterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeRouterTests.swift; sourceTree = "<group>"; };
 		CA0F2C022681103B00B340F1 /* WelcomeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeRouter.swift; sourceTree = "<group>"; };
 		CA0F2C0526811AA400B340F1 /* WelcomeControllerFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeControllerFactory.swift; sourceTree = "<group>"; };
+		CA0F2C0826811D4200B340F1 /* ValidationBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidationBuilder.swift; sourceTree = "<group>"; };
 		CA7D5CE7267CBFC8005D24DB /* RequiredFieldValidationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequiredFieldValidationTests.swift; sourceTree = "<group>"; };
 		CA7D5CEB267CC443005D24DB /* RequiredFieldValidation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequiredFieldValidation.swift; sourceTree = "<group>"; };
 		CA7D5CF0267CC6FE005D24DB /* CompareFieldsValidationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompareFieldsValidationTests.swift; sourceTree = "<group>"; };
@@ -622,6 +624,14 @@
 			path = Welcome;
 			sourceTree = "<group>";
 		};
+		CA0F2C0726811D3200B340F1 /* Builders */ = {
+			isa = PBXGroup;
+			children = (
+				CA0F2C0826811D4200B340F1 /* ValidationBuilder.swift */,
+			);
+			path = Builders;
+			sourceTree = "<group>";
+		};
 		CA7D5CE9267CC426005D24DB /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
@@ -730,6 +740,7 @@
 		CA924F30267B8003006D2733 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				CA0F2C0726811D3200B340F1 /* Builders */,
 				CA924F8E267BCDE0006D2733 /* Decorators */,
 				CA924F87267BB063006D2733 /* Env */,
 				CA924F84267B9983006D2733 /* Proxies */,
@@ -1760,6 +1771,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA0F2C0926811D4200B340F1 /* ValidationBuilder.swift in Sources */,
 				CA7D5D0C267D1F36005D24DB /* AlamofireAdapterFactory.swift in Sources */,
 				CA924F7C267B8D67006D2733 /* RemoteAddAccountFactory.swift in Sources */,
 				CA924F90267BCDF6006D2733 /* MainQueueDispatchDecorator.swift in Sources */,
