@@ -40,10 +40,11 @@ class SignUpViewControllerTests: XCTestCase {
 
 extension SignUpViewControllerTests {
     
-    func makeSut(signUpSpy: ((SignUpViewModel) -> Void)? = nil) -> SignUpViewController {
+    func makeSut(signUpSpy: ((SignUpViewModel) -> Void)? = nil, file: StaticString = #filePath, line: UInt = #line) -> SignUpViewController {
         let sut = SignUpViewController.instantiate()
         sut.signUp = signUpSpy
         sut.loadViewIfNeeded()
+        checkMemoryLeak(for: sut, file: file, line: line)
         return sut
     }
 }

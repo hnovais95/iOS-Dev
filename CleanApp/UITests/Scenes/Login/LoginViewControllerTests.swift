@@ -38,10 +38,11 @@ class LoginViewControllerTests: XCTestCase {
 
 extension LoginViewControllerTests {
     
-    func makeSut(loginSpy: ((LoginViewModel) -> Void)? = nil) -> LoginViewController {
+    func makeSut(loginSpy: ((LoginViewModel) -> Void)? = nil, file: StaticString = #filePath, line: UInt = #line) -> LoginViewController {
         let sut = LoginViewController.instantiate()
         sut.login = loginSpy
         sut.loadViewIfNeeded()
+        checkMemoryLeak(for: sut, file: file, line: line)
         return sut
     }
 }
