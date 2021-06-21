@@ -22,6 +22,7 @@
 		CA0F2BF32680F17D00B340F1 /* AuthenticationSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA0F2BE62680C7F100B340F1 /* AuthenticationSpy.swift */; };
 		CA0F2BF52680F1FF00B340F1 /* LoginControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA0F2BF42680F1FF00B340F1 /* LoginControllerFactory.swift */; };
 		CA0F2BF72680F3E400B340F1 /* RemoteAuthenticationFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA0F2BF62680F3E400B340F1 /* RemoteAuthenticationFactory.swift */; };
+		CA0F2BFA2680F7AF00B340F1 /* Welcome.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA0F2BF92680F7AF00B340F1 /* Welcome.storyboard */; };
 		CA7D5CE8267CBFC8005D24DB /* RequiredFieldValidationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA7D5CE7267CBFC8005D24DB /* RequiredFieldValidationTests.swift */; };
 		CA7D5CEC267CC443005D24DB /* RequiredFieldValidation.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA7D5CEB267CC443005D24DB /* RequiredFieldValidation.swift */; };
 		CA7D5CED267CC51B005D24DB /* XCTestCase+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CADECA7826778B8400E53178 /* XCTestCase+Extensions.swift */; };
@@ -337,6 +338,7 @@
 		CA0F2BF12680F03600B340F1 /* LoginControllerFactoryTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginControllerFactoryTests.swift; sourceTree = "<group>"; };
 		CA0F2BF42680F1FF00B340F1 /* LoginControllerFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginControllerFactory.swift; sourceTree = "<group>"; };
 		CA0F2BF62680F3E400B340F1 /* RemoteAuthenticationFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemoteAuthenticationFactory.swift; sourceTree = "<group>"; };
+		CA0F2BF92680F7AF00B340F1 /* Welcome.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Welcome.storyboard; sourceTree = "<group>"; };
 		CA7D5CE7267CBFC8005D24DB /* RequiredFieldValidationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequiredFieldValidationTests.swift; sourceTree = "<group>"; };
 		CA7D5CEB267CC443005D24DB /* RequiredFieldValidation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequiredFieldValidation.swift; sourceTree = "<group>"; };
 		CA7D5CF0267CC6FE005D24DB /* CompareFieldsValidationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompareFieldsValidationTests.swift; sourceTree = "<group>"; };
@@ -589,6 +591,14 @@
 				CA0F2BEB2680DAF700B340F1 /* LoginViewControllerTests.swift */,
 			);
 			path = Login;
+			sourceTree = "<group>";
+		};
+		CA0F2BF82680F79300B340F1 /* Welcome */ = {
+			isa = PBXGroup;
+			children = (
+				CA0F2BF92680F7AF00B340F1 /* Welcome.storyboard */,
+			);
+			path = Welcome;
 			sourceTree = "<group>";
 		};
 		CA7D5CE9267CC426005D24DB /* Protocols */ = {
@@ -959,6 +969,7 @@
 			isa = PBXGroup;
 			children = (
 				CA972BCC267A874700163683 /* Helpers */,
+				CA0F2BF82680F79300B340F1 /* Welcome */,
 				CA972BC5267A7D1100163683 /* SignUp */,
 				CA0F2BE82680D5B000B340F1 /* Login */,
 			);
@@ -1645,6 +1656,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CA972BBF267A642700163683 /* SignUp.storyboard in Resources */,
+				CA0F2BFA2680F7AF00B340F1 /* Welcome.storyboard in Resources */,
 				CA7D5D12267D2523005D24DB /* Images.xcassets in Resources */,
 				CA0F2BEA2680D94200B340F1 /* Login.storyboard in Resources */,
 			);
