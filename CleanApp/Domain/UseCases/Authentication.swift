@@ -15,11 +15,11 @@ public protocol Authentication {
 
 public struct AuthenticationModel: Model {
     
-    public var name: String
+    public var email: String
     public var password: String
     
-    public init(name: String, password: String) {
-        self.name = name
+    public init(email: String, password: String) {
+        self.email = email
         self.password = password
     }
 }

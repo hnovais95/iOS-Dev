@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		CA0F2BD92680B41200B340F1 /* Authentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA0F2BD82680B41200B340F1 /* Authentication.swift */; };
+		CA0F2BDB2680B4EB00B340F1 /* RemoteAuthenticationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA0F2BDA2680B4EB00B340F1 /* RemoteAuthenticationTests.swift */; };
+		CA0F2BDD2680B6A000B340F1 /* RemoteAuthentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA0F2BDC2680B6A000B340F1 /* RemoteAuthentication.swift */; };
 		CA7D5CE8267CBFC8005D24DB /* RequiredFieldValidationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA7D5CE7267CBFC8005D24DB /* RequiredFieldValidationTests.swift */; };
 		CA7D5CEC267CC443005D24DB /* RequiredFieldValidation.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA7D5CEB267CC443005D24DB /* RequiredFieldValidation.swift */; };
 		CA7D5CED267CC51B005D24DB /* XCTestCase+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CADECA7826778B8400E53178 /* XCTestCase+Extensions.swift */; };
@@ -311,6 +313,8 @@
 
 /* Begin PBXFileReference section */
 		CA0F2BD82680B41200B340F1 /* Authentication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Authentication.swift; sourceTree = "<group>"; };
+		CA0F2BDA2680B4EB00B340F1 /* RemoteAuthenticationTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemoteAuthenticationTests.swift; sourceTree = "<group>"; };
+		CA0F2BDC2680B6A000B340F1 /* RemoteAuthentication.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemoteAuthentication.swift; sourceTree = "<group>"; };
 		CA7D5CE7267CBFC8005D24DB /* RequiredFieldValidationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequiredFieldValidationTests.swift; sourceTree = "<group>"; };
 		CA7D5CEB267CC443005D24DB /* RequiredFieldValidation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequiredFieldValidation.swift; sourceTree = "<group>"; };
 		CA7D5CF0267CC6FE005D24DB /* CompareFieldsValidationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompareFieldsValidationTests.swift; sourceTree = "<group>"; };
@@ -1059,6 +1063,7 @@
 			isa = PBXGroup;
 			children = (
 				CAF7613F2673C326004A9B9E /* RemoteAddAccountTests.swift */,
+				CA0F2BDA2680B4EB00B340F1 /* RemoteAuthenticationTests.swift */,
 			);
 			path = UseCases;
 			sourceTree = "<group>";
@@ -1067,6 +1072,7 @@
 			isa = PBXGroup;
 			children = (
 				CAF761542673CABD004A9B9E /* RemoteAddAccount.swift */,
+				CA0F2BDC2680B6A000B340F1 /* RemoteAuthentication.swift */,
 			);
 			path = UseCases;
 			sourceTree = "<group>";
@@ -1777,6 +1783,7 @@
 				CAF7615E2673D94F004A9B9E /* HttpPostClient.swift in Sources */,
 				CAF761652673EC7D004A9B9E /* Data+Extensions.swift in Sources */,
 				CAF761622673DC06004A9B9E /* HttpError.swift in Sources */,
+				CA0F2BDD2680B6A000B340F1 /* RemoteAuthentication.swift in Sources */,
 				CAF761552673CABD004A9B9E /* RemoteAddAccount.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1790,6 +1797,7 @@
 				CADECA7926778B8400E53178 /* XCTestCase+Extensions.swift in Sources */,
 				CADECA8026778CD500E53178 /* AccountModelFactory.swift in Sources */,
 				CAF761402673C326004A9B9E /* RemoteAddAccountTests.swift in Sources */,
+				CA0F2BDB2680B4EB00B340F1 /* RemoteAuthenticationTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
